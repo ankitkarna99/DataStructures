@@ -70,6 +70,8 @@ class LinkedList {
                 }
                 node = node->next;
             }
+            
+            count--;
         }
 
         T getFront(){
