@@ -25,6 +25,8 @@ class Stack {
         }
 
         T pop(){
+            if (count == 0) return *new T;
+
             T returnData;
             returnData = arr[count - 1];
 
@@ -49,6 +51,8 @@ class Stack {
         }
 
         T peek(){
+            if (count == 0) return *new T;
+
             return arr[count - 1];
         }
 
