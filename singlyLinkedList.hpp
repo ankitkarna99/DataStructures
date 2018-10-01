@@ -78,6 +78,10 @@ class LinkedList {
             return head->data;
         }
 
+        T getBack(){
+            return tail->data;
+        }
+
         int getSize(){
             return count;
         }
