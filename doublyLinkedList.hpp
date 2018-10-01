@@ -64,6 +64,21 @@ class DoublyLinkedList {
             count++;
         }
 
+        Node<T> * find(T data){
+            if (count == 0) return new Node<T>;
+
+            Node<T> *node = head;
+
+            while(node){
+                if (node->data == data){
+                    break;
+                }
+                node = node->next;
+            }
+
+            return node;
+        }
+
         void removeFront(){
             if (count == 0) return;
 

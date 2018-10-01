@@ -18,5 +18,9 @@ int main(){
     cout << "Back: " << myDLL.getBack() << endl;
     cout << "Printing list:" << endl;
     myDLL.displayList();
+    Node<int> * searchResult = myDLL.find(7);
+    cout << "Previous Node Data: " << searchResult->prev->data << endl;
+    cout << "Found Node Data: " << searchResult->data << endl;
+    cout << "Next Node Data: " << searchResult->next->data << endl;
     return 0;
 }
